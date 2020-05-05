@@ -1,0 +1,45 @@
+.header {
+    height: 90px;
+    font-weight: bold;
+}
+.header-nav {
+    font-size: $font-xs;
+    height: 100%;
+    &__list {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        text-align: center;
+        margin: 0 15px;
+        span {
+            display: block;
+            font-size: $font-l;
+            &:hover {
+                transition : .3s;
+                opacity: .8;
+            }
+        }
+    }
+    .top a:before {
+        content:"トップ";
+    }
+    .news a:before {
+        content:"ニュース";
+    }
+    .story a:before {
+        content:"ストーリー";
+    }
+    .comments a:before {
+        content:"著名人コメント";
+    }
+    .casts a:before {
+        content:"キャスト";
+    }
+    .inquiry a:before {
+        content:"問い合わせ";
+    }
+}
+

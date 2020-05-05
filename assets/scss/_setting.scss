@@ -1,0 +1,28 @@
+@charset "UTF-8";
+//==============================================
+//サイトの基本設定
+//==============================================
+
+//フォントサイズ----------------------------------
+$font-xl: 34px;    
+$font-l: 22px;
+$font-m: 18px;
+$font-s: 14px;
+$font-xs: 12px;
+
+$basesize: 16px;
+
+//色--------------------------------------------
+$black: #333333;
+$broun: #421f15;
+$red: #c63205;
+
+//ブレイクポイント---------------------------------
+$breakpoints: (
+    xs: "screen and (max-width:320px)",
+    s: "screen and (max-width:575px)",
+    m: "screen and (max-width:767px)",
+    l: "screen and (max-width:991px)",
+    xl: "screen and (max-width:1199px)",
+);
+

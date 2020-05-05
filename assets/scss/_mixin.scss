@@ -1,0 +1,37 @@
+// クリアフレックス---------------------------------
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+//タイトル--------------------------------------------
+@mixin title ($color: $subcolor) {
+    display: inline-block;
+    font-size: $title-heading;
+    color: $color;
+    font-weight: 600;
+}
+//リンク矢印-----------------------------------
+@mixin linkIcon($color) {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 10px;
+        height: 10px;
+        margin-top: -7px;
+        border-top: 3px solid $color;
+        border-right: 3px solid $color;
+        transform: rotate(45deg);
+    }
+    
+}
+// メディアクエリ-------------------------------------
+@mixin media($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}

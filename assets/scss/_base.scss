@@ -1,0 +1,36 @@
+//全体-------------------------------------------------
+body {								
+    // フォント
+    // 'Montserrat'
+    // Regular 400, Medium 500, Semi-bold 600
+    font-family: futura-pt-condensed, ヒラギノ角ゴ, メイリオ, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background-image: url(../img/repeat-bg@2x.png);
+    background-repeat: repeat-y;
+    line-height: 1.5;
+    font-size: $basesize;
+    color: $broun;
+}
+//リンク-------------------------------------------------
+a {
+    text-decoration: none;
+    color: $broun;
+    &:hover {
+        transition : .3s;
+        opacity: .8;
+    }
+}
+//イメージ------------------------------------------------
+img {
+    max-width: 100%;  //フルーイドイメージ
+    height: auto;     //親要素に合わせて自動で拡大縮小
+}
+// Container
+.container {
+    max-width: 840px;
+    padding: 60px 15px;
+    margin: 0 auto;
+}
+
+

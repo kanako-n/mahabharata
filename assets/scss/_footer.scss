@@ -1,12 +1,28 @@
+/*---------------------------------------------
+スケジュール
+---------------------------------------------*/
 .schedule {
     background-color:rgba(255, 255, 255, .3);
+    padding-top: 30px;
+    padding-bottom: 45px;
+    text-align: center;
+    &__item {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+        padding-bottom: 25px;
+        a {
+            border-bottom: 2px solid $broun;
+        }
+    }
+    &__btn-area {
+        text-align: center;
+        margin-top: 30px; 
+    }
+    &__btn {
+        margin: 0 15px;
+    }
 }
-
-
-
-
-
-
 
 /*---------------------------------------------
 フッター

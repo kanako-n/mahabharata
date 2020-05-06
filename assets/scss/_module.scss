@@ -1,32 +1,31 @@
-
+//タイトル----------------------------------------
+.content-title {
+    font-size: 43px;
+    padding-bottom: 30px;
+    font-family: economica,sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.content-title--white {
+    @extend .content-title;
+    color: #fff;
+}
 //ボタン------------------------------------------
-// .btn {
-//     display: inline-block;
-//     padding: 20px 86px;
-//     font-size: 20px;
-//     font-weight: 600;
-// }
-//汎用ボタン
-// .btn--bright {
-//     color: $subcolor;
-//     background-color: #fff;
-//     border: 1px solid #707070;
-//     &:hover {
-//         color: #fff;
-//         background-color: $subcolor;
-//         border: 1px solid #FFFFFF;
-//     }
-// }
-// .btn--dark {
-//     color: #fff;
-//     background-color: $subcolor;
-//     border: 1px solid #FFFFFF;
-//     &:hover {
-//         color: $subcolor;
-//         background-color: #fff;
-//         border: 1px solid #707070;
-//     }
-// }
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: $font-s;
+}
+.btn--large {
+    @extend .btn;
+    padding: 23px 30px;
+}
+.btn--red {
+    background-color: $red;
+}
+.btn--broun {
+    background-color: $broun;
+}
 //コンバージョンボタン
 // .CV-btn {
 //     display: inline-block;

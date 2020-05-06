@@ -7,11 +7,8 @@
     }
 }
 //タイトル--------------------------------------------
-@mixin title ($color: $subcolor) {
-    display: inline-block;
-    font-size: $title-heading;
-    color: $color;
-    font-weight: 600;
+@mixin btn ($color: $red) {
+    background-color: $color;
 }
 //リンク矢印-----------------------------------
 @mixin linkIcon($color) {

@@ -3,6 +3,7 @@
 function my_enqueue_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'script_js', get_template_directory_uri(). '/assets/js/script.js', array() );
+	wp_enqueue_style( 'font_style', 'https://use.typekit.net/lmu4bej.css', array(), '1.0.0' );
 	wp_enqueue_style( 'my_styles', get_template_directory_uri(). '/assets/css/style.min.css', array() );
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_scripts' );

@@ -1,9 +1,6 @@
 //全体-------------------------------------------------
 body {								
-    // フォント
-    // 'Montserrat'
-    // Regular 400, Medium 500, Semi-bold 600
-    font-family: futura-pt-condensed, ヒラギノ角ゴ, メイリオ, sans-serif;
+    font-family: Hiragino Kaku Gothic, ヒラギノ角ゴ, メイリオ, sans-serif;
     font-style: normal;
     font-weight: 500;
     background-image: url(../img/repeat-bg@2x.png);
@@ -16,6 +13,7 @@ body {
 a {
     text-decoration: none;
     color: $broun;
+    cursor: pointer;
     &:hover {
         transition : .3s;
         opacity: .8;

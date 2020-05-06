@@ -21,3 +21,7 @@ wp_nav_menu(
 );
 ?>
     </header>
+<?php if( is_front_page() ): ?>
+    <section class="container">
+    </section>
+<?php endif; ?>

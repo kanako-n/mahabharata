@@ -4,7 +4,7 @@
 .schedule {
     background-color:rgba(255, 255, 255, .3);
     padding-top: 30px;
-    padding-bottom: 45px;
+    padding-bottom: 35px;
     text-align: center;
     @include media(m) {
         padding: 20px;
@@ -32,7 +32,7 @@
         margin-top: 30px; 
     }
     &__btn {
-        margin: 0 15px;
+        margin: 0 15px 10px;
     }
 }
 
@@ -44,6 +44,9 @@
     height: 80px;
     color: #fff;
     text-align: center;
+    @include media(s) {
+        font-size: 8px;
+    }
 }
 .footer-copyright {
     line-height: 80px;

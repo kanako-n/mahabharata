@@ -6,8 +6,8 @@
     font-weight: bold;
 }
 .header-nav {
-    font-size: $font-xs;
     height: 100%;
+    font-size: $font-xs;
     &__list {
         height: 100%;
         display: flex;
@@ -23,6 +23,9 @@
             font-size: $font-l;
             @include media(m) {
                 font-size: $font-m;
+            }
+            @include media(xs) {
+                font-size: $font-s;
             }
             &:hover {
                 transition : .3s;
@@ -48,9 +51,67 @@
     .inquiry a:before {
         content:"問い合わせ";
     }
+    
 }
 
 
 /*---------------------------------------------
 ヘッダー下 トップページ
 ---------------------------------------------*/
+.hero {
+    background-image: url(../img/hero-bg@2x.png);
+    background-size: cover;
+    color: #ffffff;
+    font-family: serif;
+    font-weight: bold;
+    &__inner {
+        position: relative;
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 60px 20px;
+    }
+    &__caption {
+        text-align: center;
+        font-size: 35px;
+        @include media(s) {
+            font-size: $font-m;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: 85px;
+        @include media(s) {
+            font-weight: normal;
+            font-size: $font-xl;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 40px;
+        @include media(m) {
+            display: block;
+        }
+    }
+    &__schedule {
+        font-size: $font-xl;
+        @include media(m) {
+            font-size: $font-m;
+            margin-bottom: 20px;
+        }
+    }
+    &__detail {
+        max-width: 340px;
+        font-size: $font-s;
+        @include media(m) {
+            font-size: $font-xs;
+        }
+    }
+    &__btn {
+        position: absolute;
+        bottom: -30px;
+        right: 20px;
+    }
+
+}

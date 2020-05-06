@@ -22,9 +22,23 @@ wp_nav_menu(
 ?>
     </header>
 <?php if( is_front_page() ): ?>
-    <div class="jumbotron">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-bg@2x.png">
-    <div class="container"></div>
-      <!-- /.container -->
-    </div>
+    <section class="hero">
+        <div class="hero__inner">
+            <p class="hero__caption"><?php bloginfo('description'); ?></p>
+            <h1 class="hero__title"><?php bloginfo('name'); ?></h1>
+            <div class="hero__info">
+                <p class="hero__schedule">
+                    2020年7月4日〜7日<br>
+                    中野ZERO大ホール
+                </p>
+                <p class="hero__detail">
+                    小池博史ブリッジプロジェクトが2013年から2020年までの8カ年計画で臨む、インド古代叙事詩「マハーバーラタ」の全編舞台作品化計画。いよいよその集大成である完全版マハーバーラタの公演が決定！！<br>
+                    アジア各国のアーティストらが共同で取り組み、発展を遂げる本事業はアジア、そして世界へ向けてビッグウェーブを起こす。タイと日本から世界へと発信する本作。どうぞお見逃しなく！
+                </p>
+            </div>
+            <!-- /.heroinfo -->
+            <a class="hero__btn btn--large btn--red" href="#">チケット予約サイトへ</a>
+        </div>
+        <!-- /.hero__inner -->
+    </section>
 <?php endif; ?>

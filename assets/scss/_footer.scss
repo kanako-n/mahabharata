@@ -6,13 +6,25 @@
     padding-top: 30px;
     padding-bottom: 45px;
     text-align: center;
+    @include media(m) {
+        padding: 20px;
+    }
     &__item {
         font-size: 20px;
         font-weight: bold;
         line-height: 1;
         padding-bottom: 25px;
+        @include media(s) {
+            font-size: $font-s;
+            text-align-last: left;
+        }
+        span {
+            @include media(m) {
+                display: block;
+            }
+        }
         a {
-            border-bottom: 2px solid $broun;
+            border-bottom: 2px solid $broun;  
         }
     }
     &__btn-area {

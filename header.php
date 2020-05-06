@@ -22,6 +22,9 @@ wp_nav_menu(
 ?>
     </header>
 <?php if( is_front_page() ): ?>
-    <section class="container">
-    </section>
+    <div class="jumbotron">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-bg@2x.png">
+    <div class="container"></div>
+      <!-- /.container -->
+    </div>
 <?php endif; ?>
